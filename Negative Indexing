@@ -1,1 +1,5 @@
 
+word = str(input())
+word2 = str(input())
+print(word[-1:-3])
+print(word2[-3:-6])
