@@ -1,0 +1,8 @@
+text =input()
+newlist=list(text)
+capitals=list()
+
+for i in range(len(text)):
+    if newlist[i].isupper():
+        capitals+=[i]
+print(capitals)
