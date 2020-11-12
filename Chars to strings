@@ -1,0 +1,4 @@
+letter = input(str())
+letter1 = input(str())
+letter2 = input(str())
+print(f'{letter}{letter1}{letter2}')
