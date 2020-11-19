@@ -1,0 +1,17 @@
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def say_hi(self):
+        print(f"Saying hi, my name is {self.name}")
+
+    def say_bye(self):
+        print(f"Saying bye, my name is {self.name}")
+
+hristo = Person("Hristo")
+hristo.say_hi()
+hristo.say_bye()
+
+diana = Person("Diana")
+diana.say_hi()
+diana.say_bye()
