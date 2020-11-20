@@ -1,0 +1,46 @@
+# Schedule Library imported
+pip_install_schedule
+import schedule
+import time
+
+# Functions setup
+def sudo_placement():
+    print("Get ready for Sudo Placement at"
+          "copyassignment.com")
+
+def good_luck():
+    print("Good Luck for Test")
+
+def work():
+    print("Study and work hard")
+
+def bedtime():
+    print("It is bed time go rest")
+
+def coder():
+    print("Shaurya says copyassignment.com")
+
+#Task scheduling
+# After every 10mins geeks() is called.
+schedule.every(10).minutes.do(coder)
+
+# After every hour geeks() is called.
+schedule.every( ).hour.do(coder)
+
+# Every day at 12am or 00:00 time bedtime() is called.
+schedule.every(5).to(10).minutes.do(work)
+
+#Every monday good_luck() is called
+schedule.every().monday.do(good_luck)
+
+# Every tuesday at 18:00 sudo_placement() is called
+schedule.every().tuesday.at("18:00").do(sudo_placement)
+
+# Loop so that the scheduling task
+# Keeps on running all time.
+while True:
+     # Check wheter a scheduled task
+     # is pending to run or not
+     schedule.run_pending()
+     time.sleep(1)
+
